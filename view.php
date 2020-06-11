@@ -14,6 +14,7 @@ $connectionInfo = array("UID" => "ddacadmin", "pwd" => "ddac@123", "Database" =>
 $serverName = "tcp:ddacdatabase.database.windows.net,1433";
 $conn = sqlsrv_connect($serverName, $connectionInfo);
 
-echo "Connected.";
+$tsql= "SELECT * FROM [dbo].[restaurant]";
+$getResults= sqlsrv_query($conn, $tsql);
 
 ?>
