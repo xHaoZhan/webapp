@@ -13,4 +13,8 @@ catch (PDOException $e) {
 $connectionInfo = array("UID" => "ddacadmin", "pwd" => "{your_password_here}", "Database" => "ddacdatabase", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
 $serverName = "tcp:ddacdatabase.database.windows.net,1433";
 $conn = sqlsrv_connect($serverName, $connectionInfo);
+
+if($conn){
+echo "Connected.";
+}
 ?>
