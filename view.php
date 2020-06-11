@@ -14,7 +14,6 @@ $connectionInfo = array("UID" => "ddacadmin", "pwd" => "{your_password_here}", "
 $serverName = "tcp:ddacdatabase.database.windows.net,1433";
 $conn = sqlsrv_connect($serverName, $connectionInfo);
 
-if($conn){
 echo "Connected.";
-}
+
 ?>
